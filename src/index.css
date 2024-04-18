@@ -30,7 +30,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.panel:target {
+.panel.active {
   max-height: 1000px;
 }
 

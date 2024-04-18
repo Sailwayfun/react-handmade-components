@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState} from 'react';
 import Accordion from './components/Accordion.jsx';
 import { texts } from './data/randomTexts.js';
 import './App.css';
