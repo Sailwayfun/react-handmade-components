@@ -10,6 +10,11 @@ function App() {
     setActivePanel(id);
   }
 
+  function collaspePanel(e) {
+    e.stopPropagation();
+    setActivePanel(null);
+  }
+
   return (
     <>
       {texts.map((text, index) => (
@@ -19,6 +24,7 @@ function App() {
           text={text}
           activeId={activePanel}
           id={index}
+          onCollapse={collaspePanel}
         />
       ))}
     </>
